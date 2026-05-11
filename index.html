@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COE Project Progress and National Recognition - OAPF News</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        oapf: {
+                            primary: '#800000',
+                            secondary: '#660000',
+                            accent: '#d69e2e',
+                            light: '#f7fafc',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+                        sans: ['Arial', 'Helvetica', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { font-size: 12pt; }
+        }
+        
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        .lightbox-close:hover {
+            color: #bbb;
+        }
+        
+        .zoomable-image {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .zoomable-image:hover {
+            transform: scale(1.02);
+        }
+        
+        .lightbox-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 1001;
+        }
+        
+        .lightbox-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .lightbox-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-oapf-primary text-white shadow-lg">
+        <div class="max-w-4xl mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="md:w-1/3">
+                    <img src="logos/School_Logo.png" alt="School Logo" class="h-16 w-auto border-2 border-white bg-oapf-primary p-1">
+                    <div>
+                        <h1 class="text-2xl font-bold">OAPF News</h1>
+                        <p class="text-blue-200 text-sm">Old Anandians' Professional Forum</p>
+                    </div>
+                </div>
+                <img src="logos/oapf-logo-big.jpg" alt="OAPF Logo" class="h-16 w-auto border-2 border-white bg-oapf-primary p-1">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 py-8">
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Article Header -->
+            <div class="bg-oapf-light px-6 py-4 border-b">
+                <span class="bg-oapf-accent text-white text-xs font-bold px-3 py-1 rounded-full">NEWS</span>
+                <h1 class="text-3xl font-bold text-oapf-primary mt-3 leading-tight">
+                    Meeting with Mr. Nahil Wijesuriya: COE Project Progress and National Recognition for Sri Lanka's Pioneering STEAM Education Initiative
+                </h1>
+            </div>
+
+            <!-- Article Body -->
+            <div class="px-6 py-8">
+                <!-- Lead Paragraph -->
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Today, 11th May 2026 at 10.30 a.m., a distinguished delegation comprising Principal Mr. Lal Dissanayake, OAPF President General Kamal Gunaratne, and several representatives of the Old Anandians' Professional Forum (OAPF), met with renowned philanthropist and Chairman of East West Properties PLC, Mr. Nahil Wijesuriya, at his office to present the latest progress of the transformational Centre of Excellence (COE) Project at Ananda College.
+                </p>
+
+                <!-- Condolence Section with Image -->
+                <div class="mb-8">
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/3">
+                            <img src="Selected_photos/Condolance_Message.png" alt="Condolence Message" class="w-full rounded-lg shadow-md zoomable-image" onclick="openLightbox(this.src)">
+                        </div>
+                        <div class="md:w-2/3">
+                            <p class="text-gray-700 leading-relaxed">
+                                At the outset, the delegation respectfully conveyed their deepest condolences on the passing away of Mr. Wijesuriya's beloved sister and presented a memorial condolence note as a sincere gesture of sympathy, respect, and gratitude.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opening Remarks Section with Image -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Visionary Leadership and Historic Contribution</h2>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-2/3">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                The meeting was formally initiated by General Kamal Gunaratne, who delivered the opening remarks and highlighted the historic importance of the Centre of Excellence initiative — a visionary educational transformation project designed to introduce next-generation STEAM (Science, Technology, Engineering, Arts, and Mathematics) education to Sri Lanka through Ananda College.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                During the discussions, special appreciation was extended to Mr. Nahil Wijesuriya for his extraordinary and historic contribution of Rs. 250 million towards the Centre of Excellence project — one of the largest philanthropic contributions ever received by a Sri Lankan public school for educational transformation.
+                            </p>
+                            <div class="bg-oapf-light border-l-4 border-oapf-accent p-4 rounded-r my-4">
+                                <p class="text-gray-700 italic">
+                                    This remarkable generosity has enabled the realization of a Rs. 350 million national-level educational initiative aimed at reshaping secondary education in Sri Lanka through activity-based, interdisciplinary, and future-oriented learning methodologies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="md:w-1/3">
+                            <img src="Selected_photos/Kamal_Gunaratna.png" alt="General Kamal Gunaratne" class="w-full rounded-lg shadow-md zoomable-image" onclick="openLightbox(this.src)">
+                            <p class="text-sm text-gray-500 mt-2 text-center">General Kamal Gunaratne delivering opening remarks</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Presentation Section with Image -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Comprehensive Progress Presentation</h2>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/3">
+                            <img src="Selected_photos/Kushan_Devinda.png" alt="Mr. Kushan Devinda" class="w-full rounded-lg shadow-md zoomable-image" onclick="openLightbox(this.src)">
+                            <p class="text-sm text-gray-500 mt-2 text-center">Mr. Kushan Devinda presenting COE progress</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Thereafter, Mr. Kushan Devinda delivered a comprehensive and highly professional presentation on the progress and ongoing developments of the COE Building Project. The presentation outlined the remarkable transformation of the historic "Pasmahala" Science Building into a state-of-the-art educational hub featuring ten specialized centres dedicated to Science, ICT, Mathematics, STEAM Innovation, Entrepreneurship, Media, Language Learning, Fine Arts, Performance Arts, and collaborative learning spaces.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                The presentation further highlighted that the Centre of Excellence is envisioned not merely as an infrastructure project, but as Sri Lanka's first large-scale STEAM education pilot initiative within the public education sector. The project is designed to empower students through inquiry-based learning, project-based education, creativity, innovation, critical thinking, leadership, entrepreneurship, and real-world problem-solving skills.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                Mr. Kushan Devinda also explained that the project integrates cutting-edge educational technologies and modern learning environments, including advanced ICT laboratories, interactive digital learning systems, robotics and innovation spaces, creative arts facilities, multimedia learning platforms, collaborative classrooms, and entrepreneurship ecosystems intended to prepare Sri Lankan students for the rapidly evolving global future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ministry Recognition Section -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Ministry of Education Recognition</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        The delegation further informed Mr. Nahil Wijesuriya that the Centre of Excellence initiative has now received highly significant recognition and formal approval from the Ministry of Education of Sri Lanka. During several discussions held between the OAPF leadership, Ananda College administration, academic experts, and senior Ministry officials, the Ministry acknowledged STEAM education as a critically important future-oriented educational reform necessary for Sri Lanka's national education framework.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        It was also emphasized that senior Ministry officials and education authorities had personally visited the Centre of Excellence premises to inspect the ongoing developments and to engage in extensive discussions regarding the implementation of next-generation STEAM learning models and curricula for Sri Lanka.
+                    </p>
+                    <div class="bg-green-50 border-l-4 border-green-600 p-4 rounded-r my-4">
+                        <p class="text-gray-700">
+                            <strong>Official Approval:</strong> The Ministry of Education has formally granted approval for the renovation and establishment of the Centre of Excellence as a STEAM Education Unit at Ananda College. The official approval recognized the project as a nationally valuable educational initiative and acknowledged the role played by the Old Anandians' Professional Forum and its benefactors in introducing a transformative educational model to Sri Lanka.
+                        </p>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        The delegation also noted with pride that during meetings with Ministry representatives, it was highlighted that Mr. Nahil Wijesuriya's exceptional generosity and visionary philanthropy are helping Sri Lanka's education system meet the challenges of the next century today. His support was recognized not merely as a financial contribution, but as a historic investment in the future of Sri Lankan children and the advancement of national education.
+                    </p>
+                </div>
+
+                <!-- Financial Presentation Section with Image -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Financial Governance and Transparency</h2>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-2/3">
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Subsequently, Treasurer Mr. Priyantha De Silva presented a transparent and detailed explanation of the project's financial progress and governance mechanisms, emphasizing the strong commitment of the OAPF towards accountability, transparency, sustainability, and professional financial management.
+                            </p>
+                            <p class="text-gray-700 leading-relaxed">
+                                It was explained that internationally recognized auditing standards, structured governance frameworks, and public accountability measures are integral parts of the project.
+                            </p>
+                        </div>
+                        <div class="md:w-1/3">
+                            <img src="Selected_photos/Priyantha_De_Silva.png" alt="Mr. Priyantha De Silva" class="w-full rounded-lg shadow-md zoomable-image" onclick="openLightbox(this.src)">
+                            <p class="text-sm text-gray-500 mt-2 text-center">Mr. Priyantha De Silva presenting financial progress</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Infrastructure Section with Image -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Advanced Technological Infrastructure</h2>
+                    <div class="flex flex-col md:flex-row gap-6 items-start">
+                        <div class="md:w-1/3">
+                            <img src="Selected_photos/Paisndu_Hatanachchige.png" alt="Mr. Pasindu Hattanchige" class="w-full rounded-lg shadow-md zoomable-image" onclick="openLightbox(this.src)">
+                            <p class="text-sm text-gray-500 mt-2 text-center">Mr. Pasindu Hattanchige presenting ELV systems</p>
+                        </div>
+                        <div class="md:w-2/3">
+                            <p class="text-gray-700 leading-relaxed">
+                                Mr. Pasindu Hattanchige then presented an insightful overview of the ELV systems and advanced technological infrastructure planned for the Centre, enabling all present to gain a clear understanding of the project's technical sophistication and future readiness.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Initiative Section -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">A Global Anandian Initiative</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        During the meeting, it was also highlighted that the Centre of Excellence project has become a truly global Anandian initiative, receiving support from professionals, educationists, entrepreneurs, alumni associations, and philanthropists from Sri Lanka and overseas. Numerous well-wishers and organizations have already pledged major contributions towards the establishment of the ten specialized learning centres and supporting infrastructure.
+                    </p>
+                </div>
+
+                <!-- Mr. Wijesuriya's Response -->
+                <div class="mb-8 bg-oapf-light p-6 rounded-lg">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Mr. Nahil Wijesuriya's Response</h2>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Following the presentations and discussions, Mr. Nahil Wijesuriya expressed his deep appreciation and admiration for the extraordinary vision, professionalism, transparency, and dedication demonstrated by the OAPF team and the Ananda College administration.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        He warmly commended the initiative as a highly meaningful and nationally important educational transformation project that would create lasting benefits for future generations of Sri Lankan students.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Mr. Wijesuriya further expressed his happiness in seeing the remarkable progress achieved thus far and graciously conveyed his willingness to continue extending his fullest support towards the successful realization of the Centre of Excellence initiative.
+                    </p>
+                    <div class="bg-white border-l-4 border-oapf-primary p-4 rounded-r mt-4">
+                        <p class="text-gray-700 italic">
+                            It was indeed a moment of immense encouragement and pride for the entire delegation to receive such a highly positive, supportive, and inspiring response from Mr. Nahil Wijesuriya, whose visionary philanthropy continues to play a defining role in shaping one of the most ambitious educational transformation projects undertaken by a Sri Lankan public school.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Conclusion -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-oapf-primary mb-4">Conclusion and Gratitude</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        In conclusion, General Kamal Gunaratne and Principal Lal Dissanayake conveyed their heartfelt gratitude to Mr. Nahil Wijesuriya for his invaluable support, visionary leadership, goodwill, and continued confidence placed in the Centre of Excellence initiative. They also cordially invited him to visit and inspect the ongoing developments of the COE Project at Ananda College at the end of this month.
+                    </p>
+                </div>
+
+                <!-- Share Section -->
+                <div class="border-t pt-6 mt-8">
+                    <h3 class="text-lg font-bold text-oapf-primary mb-3">Share This Article</h3>
+                    <div class="flex gap-3">
+                        <button onclick="shareOnWhatsApp()" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                            WhatsApp
+                        </button>
+                        <button onclick="downloadArticle()" class="bg-oapf-primary hover:bg-oapf-secondary text-white px-4 py-2 rounded-lg flex items-center gap-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                            </svg>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-gray-500 text-sm">
+            <p>© 2026 Old Anandians' Professional Forum. All rights reserved.</p>
+            <p class="mt-2">Visit us at <a href="https://www.oapf.org" class="text-oapf-primary hover:underline">www.oapf.org</a></p>
+        </footer>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Zoomed Image">
+        <div class="lightbox-controls">
+            <button class="lightbox-btn" onclick="zoomIn(event)">Zoom In (+)</button>
+            <button class="lightbox-btn" onclick="zoomOut(event)">Zoom Out (-)</button>
+            <button class="lightbox-btn" onclick="resetZoom(event)">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        let currentZoom = 1;
+        
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightboxImg.src = src;
+            lightbox.style.display = 'block';
+            currentZoom = 1;
+            lightboxImg.style.transform = 'scale(1)';
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox(event) {
+            event.stopPropagation();
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+        
+        function zoomIn(event) {
+            event.stopPropagation();
+            currentZoom += 0.25;
+            if (currentZoom > 3) currentZoom = 3;
+            document.getElementById('lightbox-img').style.transform = 'scale(' + currentZoom + ')';
+        }
+        
+        function zoomOut(event) {
+            event.stopPropagation();
+            currentZoom -= 0.25;
+            if (currentZoom < 0.5) currentZoom = 0.5;
+            document.getElementById('lightbox-img').style.transform = 'scale(' + currentZoom + ')';
+        }
+        
+        function resetZoom(event) {
+            event.stopPropagation();
+            currentZoom = 1;
+            document.getElementById('lightbox-img').style.transform = 'scale(1)';
+        }
+        
+        // Close lightbox on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox.style.display === 'block') {
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+
+        function shareOnWhatsApp() {
+            const title = encodeURIComponent("COE Project Progress and National Recognition - OAPF News");
+            const text = encodeURIComponent("Meeting with Mr. Nahil Wijesuriya: COE Project Progress and National Recognition for Sri Lanka's Pioneering STEAM Education Initiative");
+            const url = encodeURIComponent(window.location.href);
+            window.open(`https://wa.me/?text=${title}%20-%20${text}%20${url}`, '_blank');
+        }
+
+        function downloadArticle() {
+            const htmlContent = document.documentElement.outerHTML;
+            const blob = new Blob([htmlContent], { type: 'text/html' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'COE_Project_Meeting_News.html';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
